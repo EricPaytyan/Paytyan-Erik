@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&display=swap');
+
+body {
+    box-sizing: border-box;
+    background-color: #fafafa;
+    font-family: 'Manrope', sans-serif;
+}
+
+* {
+    transition: .5s ease-in-out;
+}
+
+.imgFluid {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, button, ul, li {
+    color: black;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.sectionTitleWrp {
+    text-align: center;
+}
+
+
+h2 {
+    text-align: center;
+    margin: 0 auto 35px;
+    font-size: 2.2rem;
+    display: inline-block;
+    border-bottom: 1px solid;
+}
+
+
+/* header */
+header {
+    margin-bottom: 30px;
+    position: static;
+}
+
+header.dark {
+    background-color: transparent;
+}
+
+header.dark .menuWrp .menuList li a  {
+    color: #fafafa;
+}
+
+header.static {
+    position: static;
+}
+
+header .headerWrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header .headerWrp .logoWrp img {
+    width: 100px;
+}
+
+header .menuWrp {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header .headerWrp .dropdown {
+    display: block;
+}
+
+header .headerWrp .dropdown button.menuBtn {
+    background-color: transparent;
+    border: none;
+}
+
+header .menuWrp .menuList {
+    display: none;
+}
+
+header .menuWrp .menuList li a {
+    font-size: 1.1rem;
+}
+
+
+
+/* main */
+/* introBlock */
+main .introBlock {
+    margin-bottom: 50px;
+    padding: 50px 0;
+}
+
+
+main .introBlock .introWrp {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main .introBlock .introWrp h3 {
+    font-size: 1.3rem;
+    width: 100%;
+    text-align: center;
+}
+
+main .introBlock .introWrp h1 {
+    font-size: 2.7rem;
+}
+
+main .introBlock .introWrp p {
+    color: #6d6d6d;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+main .introBlock .introWrp .links {
+    padding: 50px 0;
+}
+
+main .introBlock .introWrp .links a .githubImg {
+    width: 50px;
+}
+
+
+/* aboutBlock */
+main .aboutBlock {
+    margin-bottom: 100px;
+}
+
+main .aboutBlock .aboutWrp p {
+    font-size: 1rem;
+    width: 75%;
+    padding-bottom: 40px;
+    margin: 0 auto;
+}
+
+
+/* skillsBlock */
+main .skillsBlock {
+    margin-bottom: 100px;  
+}
+
+main .skillsBlock h3 {
+    text-transform: uppercase;
+    padding: 50px 0 30px;
+}
+
+main .skillsBlock .skillWrp {
+    height: 82%;
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .skillsBlock .skillWrp img {
+    margin-bottom: 20px;
+    width: 100px;
+
+}
+
+main .skillsBlock .skillWrp p {
+    text-transform: uppercase;
+    margin-top: auto;
+}
+
+
+/* portfolio */
+main .portfolioBlock {
+    margin-bottom: 100px; 
+    background-color: #1A1A1A; 
+    padding-top: 30px;
+}
+
+main .portfolioBlock h2 {
+    color: #ffff;
+}
+
+main .portfolioBlock .portfolioWrp {
+    margin-bottom: 40px;
+}
+
+main .portfolioBlock .portfolioWrp a {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+main .portfolioBlock .portfolioWrp a img {
+    width: 75%;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+    border-radius: 24px;
+    border: 2px solid white;
+    max-height: max-content;
+} 
+main .portfolioBlock .portfolioWrp a img:hover {
+    filter: grayscale(0%);
+} 
+
+main .portfolioBlock p.portfolioDescription {
+    text-align: center;
+    color: #ffff;
+    padding: 30px 0;
+    font-size: 1rem;
+    font-weight: 500;
+} 
+
+/* feedbackBlock */
+main .feedbackBlock {
+    margin-bottom: 100px;    
+}
+
+main .feedbackBlock .formWrp {
+    margin: 0 auto;
+    width: clamp(270px, 40vw, 440px);
+    padding: 40px 20px;
+}
+
+main .feedbackBlock .formWrp label {
+    display: block;
+}
+
+main .feedbackBlock .formWrp input, 
+main .feedbackBlock .formWrp textarea, 
+main .feedbackBlock .formWrp button {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+}
+
+main .feedbackBlock .formWrp input,
+main .feedbackBlock .formWrp textarea {
+    margin-bottom: 35px;
+    border-bottom: 1px solid #1A1A1A !important;
+    border: none;
+    background-color: transparent;
+}
+
+main .feedbackBlock .formWrp input:focus-visible, 
+main .feedbackBlock .formWrp textarea:focus-visible {
+    outline: none;    
+} 
+
+main .feedbackBlock .formWrp textarea {
+    outline: 0;
+    resize: none;
+} 
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px #fafafa inset !important;
+    box-shadow: 0 0 0 1000px #fafafa inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+main .feedbackBlock .formWrp button.submitBtn {
+    width: 50%;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 2em;
+    border: 1px solid;
+}
+
+main .feedbackBlock .formWrp button.submitBtn:hover {
+    background-color: #1A1A1A;
+    color: #fafafa;
+}
+
+
+/* footer */
+footer {
+    background-color: #1A1A1A;
+    padding: 12px 0;
+    text-align: center;
+}
+
+footer .footerWrp a.linkToTop {
+    padding: 12px 0;
+    display: block;
+}
+
+footer .footerWrp a.linkToTop p {
+    color: #fafafa;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: .5s ease-in-out;
+}
+
+footer .footerWrp .socialNetworks {
+    padding: 12px 0;
+}
+
+footer .footerWrp .socialNetworks a img {
+    padding: 0 10px;
+}
+
+footer .footerWrp span {
+    color: #fafafa;
+    padding: 12px 0 0;
+    display: block;
+}
+
+
+@media (min-width: 576px) {
+    main .skillsBlock .skillWrp {
+        width: 70%;
+    }
+
+    main .portfolioBlock p.portfolioDescription {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 768px) {
+    h2 {
+        font-size: 2.7rem;
+        margin: 0 auto 50px;
+    }
+    /* header */
+    header {
+        margin-bottom: 100px;
+        position: sticky;
+        top: 0;
+        z-index: 3;
+        background-color: #fafafa;
+    }
+
+    header .menuWrp .menuList {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .headerWrp .dropdown {
+        display: none;
+    }
+
+    /* main */
+    /* introBlock */
+    main .introBlock {
+        margin-bottom: 100px;
+    }
+
+    main .introBlock .introWrp h1 {
+        font-size: 5rem;
+    }
+
+    main .introBlock .introWrp h3 {
+        font-size: 1.8rem;
+    }
+
+    /* aboutBlock */
+    main .aboutBlock .aboutWrp p {
+        font-size: 1.2rem;
+    }
+
+    /* portfolioBlock */
+    main .portfolioBlock .portfolioWrp a img {
+        width: 100%;
+    }
+}
